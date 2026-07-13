@@ -13,10 +13,7 @@ html{scroll-behavior:smooth}
   --rose:#C2717A;
   --rose2:#e8a0a8;
   --rose3:#f7e4e6;
-  --rose4:#fff0f1;
-  --deep:#7a3d45;
   --gold:#c9a46a;
-  --gold2:#e8d5a8;
   --gold3:#fdf6e8;
   --cream:#fdf9f6;
   --white:#ffffff;
@@ -186,8 +183,7 @@ body{
   text-transform:uppercase;color:var(--muted);
 }
 .scroll-bar{
-  width:1px;height:55px;
-  overflow:hidden;
+  width:1px;height:55px;overflow:hidden;
 }
 .scroll-bar::after{
   content:'';display:block;
@@ -270,20 +266,16 @@ body{
   position:absolute;
   top:-2rem;right:-1rem;
   font-family:'Playfair Display',serif;
-  font-size:18rem;
-  line-height:1;
+  font-size:18rem;line-height:1;
   color:rgba(194,113,122,0.06);
-  pointer-events:none;
-  user-select:none;
-  z-index:0;
+  pointer-events:none;user-select:none;z-index:0;
 }
 
 .letter-card{
   background:var(--white);
   border:0.5px solid rgba(194,113,122,0.15);
   padding:4rem 3.5rem 3.5rem;
-  position:relative;
-  z-index:1;
+  position:relative;z-index:1;
   box-shadow:
     0 2px 8px rgba(194,113,122,0.06),
     0 20px 80px rgba(194,113,122,0.08),
@@ -305,8 +297,7 @@ body{
   font-family:'Playfair Display',serif;
   font-style:italic;
   font-size:2rem;color:var(--rose);
-  margin-bottom:2rem;
-  display:block;
+  margin-bottom:2rem;display:block;
 }
 
 .letter-card p{
@@ -321,36 +312,29 @@ body{
   background:linear-gradient(120deg,var(--rose3) 0%,var(--gold3) 100%);
   padding:1.5rem 2rem;
   border-left:2px solid var(--rose);
-  margin:2rem 0;
-  font-style:italic;
+  margin:2rem 0;font-style:italic;
 }
 
 .letter-sign{
   font-family:'Playfair Display',serif;
   font-style:italic;font-size:1.4rem;
-  color:var(--rose);
-  text-align:right;
-  margin-top:2.5rem;
-  padding-top:1.8rem;
+  color:var(--rose);text-align:right;
+  margin-top:2.5rem;padding-top:1.8rem;
   border-top:0.5px solid rgba(194,113,122,0.2);
 }
 
 .quote-band{
   background:var(--ink);
-  padding:6rem 2rem;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
+  padding:6rem 2rem;text-align:center;
+  position:relative;overflow:hidden;
 }
 .quote-band::before{
   content:'\201C';
   font-family:'Playfair Display',serif;
   font-size:30rem;line-height:0.8;
   color:rgba(255,255,255,0.03);
-  position:absolute;
-  top:0;left:50%;
-  transform:translateX(-50%);
-  pointer-events:none;
+  position:absolute;top:0;left:50%;
+  transform:translateX(-50%);pointer-events:none;
 }
 .quote-text{
   font-family:'Playfair Display',serif;
@@ -358,17 +342,14 @@ body{
   font-size:clamp(1.5rem,4vw,2.5rem);
   color:var(--white);
   max-width:600px;margin:0 auto;
-  line-height:1.5;
-  position:relative;z-index:1;
-  letter-spacing:0.01em;
+  line-height:1.5;position:relative;z-index:1;
 }
 .quote-text em{color:var(--rose2)}
 .quote-attr{
   font-size:0.7rem;letter-spacing:0.3em;
   text-transform:uppercase;
   color:rgba(255,255,255,0.35);
-  margin-top:2rem;
-  position:relative;z-index:1;
+  margin-top:2rem;position:relative;z-index:1;
 }
 
 .tl-section{
@@ -377,13 +358,9 @@ body{
   border-bottom:0.5px solid rgba(194,113,122,0.12);
 }
 
-.timeline{
-  position:relative;
-  padding-left:3.5rem;
-}
+.timeline{position:relative;padding-left:3.5rem;}
 .timeline::before{
-  content:'';
-  position:absolute;
+  content:'';position:absolute;
   left:6px;top:8px;bottom:8px;width:1px;
   background:linear-gradient(to bottom,
     transparent 0%,var(--rose) 12%,
@@ -399,15 +376,13 @@ body{
 .tl-item.on{opacity:1;transform:translateX(0)}
 
 .tl-dot-wrap{
-  position:absolute;
-  left:-3.77rem;top:3px;
+  position:absolute;left:-3.77rem;top:3px;
   display:flex;align-items:center;justify-content:center;
   width:14px;height:14px;
 }
 .tl-dot{
   width:10px;height:10px;border-radius:50%;
-  background:var(--cream);
-  border:2px solid var(--rose);
+  background:var(--cream);border:2px solid var(--rose);
   transition:all 0.4s ease;
 }
 .tl-item.on .tl-dot{
@@ -417,188 +392,16 @@ body{
 
 .tl-chapter{
   font-size:0.6rem;letter-spacing:0.35em;
-  text-transform:uppercase;color:var(--gold);
-  margin-bottom:0.5rem;
+  text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;
 }
 .tl-title{
   font-family:'Playfair Display',serif;
   font-size:1.35rem;font-weight:400;
-  color:var(--ink);margin-bottom:0.6rem;
-  line-height:1.3;
+  color:var(--ink);margin-bottom:0.6rem;line-height:1.3;
 }
 .tl-body{
   font-size:0.9rem;font-weight:300;
   color:var(--muted);line-height:1.9;
-}
-
-.gallery-note{
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;font-size:1.1rem;
-  color:var(--muted);margin-bottom:2rem;
-  line-height:1.8;
-}
-
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-}
-
-.g-slot{
-  aspect-ratio:1;
-  background:linear-gradient(135deg,var(--rose3),var(--gold3));
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  gap:7px;
-  cursor:pointer;
-  border:1px dashed rgba(194,113,122,0.3);
-  position:relative;overflow:hidden;
-  transition:all 0.3s cubic-bezier(0.22,1,0.36,1);
-}
-.g-slot:hover{
-  transform:scale(1.04);
-  border-color:var(--rose);
-  box-shadow:0 8px 30px rgba(194,113,122,0.2);
-}
-.g-slot input[type="file"]{
-  position:absolute;inset:0;
-  opacity:0;cursor:pointer;
-  z-index:2;width:100%;height:100%;
-}
-.g-slot img{
-  position:absolute;inset:0;
-  width:100%;height:100%;
-  object-fit:cover;display:none;z-index:1;
-}
-.g-plus{
-  font-size:1.6rem;color:var(--rose);
-  font-weight:200;line-height:1;
-  transition:transform 0.3s;
-}
-.g-slot:hover .g-plus{transform:rotate(90deg) scale(1.1)}
-.g-lbl{
-  font-size:0.6rem;font-weight:500;
-  letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--rose);
-}
-
-.love-section{
-  background:var(--ink);
-  padding:9rem 2rem;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-
-.love-bg-circles{
-  position:absolute;inset:0;pointer-events:none;
-}
-.love-bg-circles span{
-  position:absolute;border-radius:50%;
-  border:1px solid rgba(194,113,122,0.12);
-}
-.love-bg-circles span:nth-child(1){width:300px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%)}
-.love-bg-circles span:nth-child(2){width:500px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%)}
-.love-bg-circles span:nth-child(3){width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%)}
-
-.love-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
-
-.love-q{
-  font-family:'Playfair Display',serif;
-  font-style:italic;
-  font-size:clamp(2rem,6vw,3.5rem);
-  color:var(--white);
-  line-height:1.2;
-  margin-bottom:0.8rem;
-}
-.love-hint{
-  font-size:0.7rem;letter-spacing:0.3em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,0.3);
-  margin-bottom:4rem;
-}
-
-.love-btns{
-  display:flex;justify-content:center;
-  gap:1.5rem;flex-wrap:wrap;
-}
-
-.lbtn{
-  font-family:'Jost',sans-serif;
-  font-size:0.75rem;font-weight:500;
-  letter-spacing:0.25em;text-transform:uppercase;
-  padding:1.1rem 3.5rem;
-  cursor:pointer;
-  position:relative;overflow:hidden;
-  transition:all 0.35s cubic-bezier(0.22,1,0.36,1);
-  border:1px solid;
-}
-
-.lbtn::before{
-  content:'';
-  position:absolute;inset:0;
-  background:var(--white);
-  transform:translateX(-100%);
-  transition:transform 0.35s ease;
-  z-index:0;
-}
-.lbtn:hover::before{transform:translateX(0)}
-.lbtn span{position:relative;z-index:1;transition:color 0.35s}
-
-.lbtn-yes{
-  background:var(--rose);
-  color:var(--white);
-  border-color:var(--rose);
-}
-.lbtn-yes:hover span{color:var(--rose)}
-.lbtn-yes:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(194,113,122,0.4)}
-
-.lbtn-no{
-  background:transparent;
-  color:rgba(255,255,255,0.6);
-  border-color:rgba(255,255,255,0.25);
-}
-.lbtn-no::before{background:rgba(255,255,255,0.08)}
-.lbtn-no:hover span{color:rgba(255,255,255,0.9)}
-.lbtn-no:hover{transform:translateY(-3px)}
-
-#love-reveal{display:none;flex-direction:column;align-items:center;gap:2rem}
-#love-reveal.on{display:flex}
-
-.love-heart-burst{
-  font-size:5rem;color:var(--rose);
-  animation:heartPulse 1.6s ease-in-out infinite;
-  filter:drop-shadow(0 0 20px rgba(194,113,122,0.5));
-}
-
-.love-msg-main{
-  font-family:'Playfair Display',serif;
-  font-weight:400;
-  font-size:clamp(2.5rem,8vw,5rem);
-  color:var(--white);
-  line-height:1.1;
-  animation:fadeUp 1s ease forwards;
-}
-.love-msg-main em{font-style:italic;color:var(--rose2);}
-
-.love-msg-sub{
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;
-  font-size:1.3rem;
-  color:rgba(255,255,255,0.55);
-  animation:fadeUp 1s ease 0.25s both;
-}
-
-.love-msg-tag{
-  font-size:0.65rem;letter-spacing:0.35em;
-  text-transform:uppercase;
-  color:var(--gold);
-  animation:fadeUp 1s ease 0.5s both;
-  display:flex;align-items:center;gap:10px;
-}
-.love-msg-tag::before,.love-msg-tag::after{
-  content:'';width:30px;height:0.5px;
-  background:var(--gold);opacity:0.5;
 }
 
 .closing{
@@ -616,8 +419,7 @@ body{
   font-size:clamp(6rem,22vw,16rem);
   color:rgba(194,113,122,0.04);
   white-space:nowrap;
-  pointer-events:none;user-select:none;
-  line-height:1;
+  pointer-events:none;user-select:none;line-height:1;
 }
 
 .closing-content{position:relative;z-index:1}
@@ -632,8 +434,7 @@ body{
   font-family:'Playfair Display',serif;
   font-weight:400;
   font-size:clamp(2.5rem,7vw,5rem);
-  color:var(--ink);
-  line-height:1.1;margin-bottom:1.5rem;
+  color:var(--ink);line-height:1.1;margin-bottom:1.5rem;
 }
 .closing-h2 em{font-style:italic;color:var(--rose)}
 
@@ -641,8 +442,7 @@ body{
   font-family:'Cormorant Garamond',serif;
   font-style:italic;font-size:1.2rem;
   color:var(--muted);
-  max-width:460px;margin:0 auto 4rem;
-  line-height:2;
+  max-width:460px;margin:0 auto 4rem;line-height:2;
 }
 
 .closing-hearts{
@@ -658,17 +458,9 @@ body{
 .closing-hearts span:nth-child(2){font-size:2rem;animation-delay:0.25s}
 .closing-hearts span:nth-child(3){font-size:1.2rem;animation-delay:0.5s}
 
-#conf-canvas{
-  position:fixed;inset:0;
-  pointer-events:none;z-index:9000;
-  display:none;
-}
-
 @media(max-width:600px){
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .letter-card{padding:2.5rem 1.5rem 2rem}
   .sw{padding:5rem 1.5rem}
-  .love-section{padding:6rem 1.5rem}
 }
 </style>
 </head>
@@ -679,21 +471,19 @@ body{
   <p class="pre-text">Loading something beautiful…</p>
 </div>
 
-<canvas id="conf-canvas"></canvas>
-
 <section class="hero">
   <div class="hero-bg"></div>
   <canvas id="petal-canvas"></canvas>
   <div class="hero-content">
-    <p class="hero-badge">A birthday gift · made with love · just for you</p>
+    <p class="hero-badge">A birthday celebration · made just for you</p>
     <p class="hero-h1">Happy Birthday</p>
     <div style="line-height:1">
       <span class="hero-name">Naye</span>
     </div>
-    <p class="hero-italic">You are the girl worth finding.</p>
+    <p class="hero-italic">Celebrating you today and always.</p>
     <p class="hero-sub">
-      From the boy who searched all of Facebook —<br>
-      and has never once stopped looking at you since.
+      A birthday celebration filled with our best moments —<br>
+      made just for you, Naye.
     </p>
   </div>
   <div class="hero-scroll">
@@ -705,99 +495,62 @@ body{
 <div class="sw">
   <div class="ornament-divider reveal"><span class="ornament-text">✦ ♡ ✦</span></div>
   <br><br>
-  <p class="sec-eyebrow reveal">A letter for you</p>
-  <h2 class="sec-heading reveal">Dear <em>Naye,</em></h2>
+  <p class="sec-eyebrow reveal">A message for you</p>
+  <h2 class="sec-heading reveal">Happy Birthday,<br><em>Naye!</em></h2>
   <div class="letter-wrap">
     <div class="letter-deco">"</div>
     <div class="letter-card reveal">
       <div class="letter-bar"></div>
-      <span class="letter-opener">My dearest Naye,</span>
-      <p>Before I ever heard your voice, someone told me about you — and somehow, just the <em>idea</em> of you was enough to make me search the whole of Facebook until I found you.</p>
-      <p>I sent you that message with all the confidence I could carry — <em>"give me your number and you'll fall in love within a month."</em> You said "we'll see" and sent it to me. But the truth is, I kept that number quietly for an entire year — too in awe of you to press call.</p>
+      <span class="letter-opener">Happy Birthday, Naye!</span>
+      <p>Today is all about you — the moments we shared, the memories we made, and everything that brought us to right here, right now.</p>
+      <p>From that very first "hey" on Facebook, to the day you walked into Ginchi and a friend introduced us like we were strangers — every moment with you has been something I will never forget.</p>
       <div class="letter-highlight">
-        <p style="margin-bottom:0;">Then fate did what I couldn't. It brought you to Ginchi. And suddenly, the girl I'd been carrying in my heart was standing right in front of me.</p>
+        <p style="margin-bottom:0;">Every laugh, every conversation, every moment we spent together — that is what makes today worth celebrating.</p>
       </div>
-      <p>A friend introduced us as strangers. You had no idea it was me. I knew exactly who you were. And from that day forward, something quiet and beautiful grew between us — something you've never said out loud, but I have felt in every single moment.</p>
-      <p>In the way you stay. In the way you show up. In the way you smile when you think no one is watching. Naye — I see all of it. And I love all of it.</p>
-      <p>You don't need to say the words. I already know. And I will keep knowing it, for as long as you let me.</p>
-      <p>Happy birthday to the girl who made a nervous boy brave enough to type "hey" — and lucky enough to have her become his entire world.</p>
-      <div class="letter-sign">Yours, forever &nbsp;♡</div>
+      <p>On your special day, I just want you to know how much these moments mean. Thank you for being you, Naye.</p>
+      <p>Wishing you the happiest of birthdays — may this year bring you nothing but joy, laughter, and beautiful new moments.</p>
+      <div class="letter-sign">Happy Birthday &nbsp;🎂 &nbsp;♡</div>
     </div>
   </div>
 </div>
 
 <div class="quote-band">
   <p class="quote-text reveal">
-    "Some people search the whole world to find what they're looking for.<br>
-    He searched <em>Facebook</em> — and somehow, that was enough."
+    "It's not about where the story started —<br>
+    it's about the <em>moments</em> that made it worth telling."
   </p>
-  <p class="quote-attr reveal">Your story · Grade 11 to forever</p>
+  <p class="quote-attr reveal">Happy Birthday, Naye · Celebrating you today</p>
 </div>
 
 <div class="tl-section">
   <div class="sw">
     <p class="sec-eyebrow reveal">Your story together</p>
-    <h2 class="sec-heading reveal">How two strangers<br><em>found each other</em></h2>
+    <h2 class="sec-heading reveal">Moments that made<br><em>our story</em></h2>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
         <p class="tl-chapter">Grade 11 · Addis Ababa & Ginchi</p>
         <p class="tl-title">A rumour about a girl he had never met</p>
-        <p class="tl-body">Someone mentioned her beauty in passing — just a few words. But miles away in Ginchi, a boy opened Facebook and started searching. He didn't know it yet, but he was already looking for the rest of his life.</p>
+        <p class="tl-body">Someone mentioned her beauty in passing — just a few words. But miles away in Ginchi, a boy opened Facebook and started searching. That one small moment started everything.</p>
       </div>
       <div class="tl-item">
         <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
         <p class="tl-chapter">Grade 11 · The First Message</p>
-        <p class="tl-title">"Hey" — and a promise bold enough for two</p>
-        <p class="tl-body">She replied. He made his move: give me your number and you'll fall in love within a month. She said <em>we'll see</em> — and sent it. He saved it carefully. And then kept it untouched for a whole year, too nervous to call the girl who already meant everything.</p>
+        <p class="tl-title">The first "Hey"</p>
+        <p class="tl-body">She replied. He said: give me your number and you'll fall in love within a month. She said we'll see — and sent it. A simple message that became the start of something beautiful.</p>
       </div>
       <div class="tl-item">
         <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <p class="tl-chapter">Grade 12 · Fate Steps In</p>
-        <p class="tl-title">She came to Ginchi — and changed everything</p>
-        <p class="tl-body">She arrived in his city. A mutual friend introduced them as though they were strangers. She didn't recognise him. He recognised everything about her. They began talking — and the universe quietly finished what he had started.</p>
+        <p class="tl-chapter">Grade 12 · Ginchi</p>
+        <p class="tl-title">She came to Ginchi</p>
+        <p class="tl-body">She arrived in his city. A mutual friend introduced them as strangers. A new chapter began — conversations, moments, memories that neither of them will ever forget.</p>
       </div>
       <div class="tl-item">
         <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <p class="tl-chapter">Since Then · Every Single Day</p>
-        <p class="tl-title">Still together. Still her move.</p>
-        <p class="tl-body">She has never said the words. But she has stayed. She has shown up, again and again, in the quiet ways that say everything words cannot. Some love stories don't need an ending — they just keep going.</p>
+        <p class="tl-chapter">Since Then · Every Day</p>
+        <p class="tl-title">Beautiful moments, every day</p>
+        <p class="tl-body">From Addis Ababa to Ginchi, from strangers to friends — the moments we shared together are ones worth remembering. And today, on your birthday, we celebrate all of them.</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="sw">
-  <div class="ornament-divider reveal"><span class="ornament-text">♡ ✦ ♡</span></div>
-  <br><br>
-  <p class="sec-eyebrow reveal">Our memories</p>
-  <h2 class="sec-heading reveal">Moments worth<br><em>keeping forever</em></h2>
-  <p class="gallery-note reveal">Tap each frame to add a photo — of her, of you two, of any moment you never want to forget.</p>
-  <div class="gallery-grid reveal" id="gallery"></div>
-</div>
-
-<div class="love-section">
-  <div class="love-bg-circles">
-    <span></span><span></span><span></span>
-  </div>
-  <div class="love-inner reveal">
-    <div id="love-ask">
-      <p class="love-q">Naye —<br>do you love me?</p>
-      <p class="love-hint">Be honest. I can take it either way.</p>
-      <div class="love-btns">
-        <button class="lbtn lbtn-yes" onclick="answerLove()">
-          <span>Yes, I do &nbsp;♡</span>
-        </button>
-        <button class="lbtn lbtn-no" onclick="answerLove()">
-          <span>No, I don't</span>
-        </button>
-      </div>
-    </div>
-    <div id="love-reveal">
-      <div class="love-heart-burst">♡</div>
-      <p class="love-msg-main">I love you<br><em>too, Naye.</em></p>
-      <p class="love-msg-sub">I always have. From the very first "hey."</p>
-      <p class="love-msg-tag">And I always will · Happy Birthday</p>
     </div>
   </div>
 </div>
@@ -806,9 +559,9 @@ body{
   <div class="closing-watermark">Naye</div>
   <div class="closing-content">
     <div class="ornament-divider" style="margin-bottom:3.5rem"><span class="ornament-text">✦ ♡ ✦</span></div>
-    <p class="closing-pre">With all my love</p>
-    <h2 class="closing-h2">Here's to you,<br><em>beautiful Naye.</em></h2>
-    <p class="closing-p">May this birthday be as radiant as you are — and may every year that follows bring you the joy, the love, and the peace that your beautiful heart deserves.</p>
+    <p class="closing-pre">Wishing you the best</p>
+    <h2 class="closing-h2">Happy Birthday,<br><em>Naye!</em></h2>
+    <p class="closing-p">May this day be filled with smiles, laughter, and all the things that make you happiest. Here's to you and all the amazing moments ahead.</p>
     <div class="closing-hearts">
       <span>♡</span><span>♡</span><span>♡</span>
     </div>
@@ -883,68 +636,6 @@ const ro = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('on');ro.unobserve(e.target);} });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal,.tl-item').forEach(el => ro.observe(el));
-
-const gLabels = ['Us','Her smile','A moment','Our place','Her eyes','Always'];
-const gEl = document.getElementById('gallery');
-gLabels.forEach((lbl, i) => {
-  const div = document.createElement('div');
-  div.className = 'g-slot';
-  div.innerHTML = `<input type="file" accept="image/*"><img id="gi${i}" alt="${lbl}"><div class="g-plus">+</div><div class="g-lbl">${lbl}</div>`;
-  gEl.appendChild(div);
-  div.querySelector('input').addEventListener('change', e => {
-    const f = e.target.files[0]; if(!f) return;
-    const r = new FileReader();
-    r.onload = ev => {
-      const img = document.getElementById(`gi${i}`);
-      img.src = ev.target.result; img.style.display = 'block';
-      div.querySelector('.g-plus').style.display = 'none';
-      div.querySelector('.g-lbl').style.display = 'none';
-    };
-    r.readAsDataURL(f);
-  });
-});
-
-function answerLove() {
-  document.getElementById('love-ask').style.display = 'none';
-  document.getElementById('love-reveal').classList.add('on');
-  boom();
-}
-
-function boom() {
-  const c = document.getElementById('conf-canvas');
-  const ctx = c.getContext('2d');
-  c.width = window.innerWidth; c.height = window.innerHeight;
-  c.style.display = 'block';
-  const cols = ['#C2717A','#c9a96e','#f5e4e6','#8B4A52','#f0c4c8','#e8d5a8','#fff','#d4787f'];
-  const pieces = Array.from({length:150}, () => ({
-    x: Math.random()*c.width, y: Math.random()*c.height - c.height*0.5,
-    w: Math.random()*12+4, h: Math.random()*6+3,
-    color: cols[Math.floor(Math.random()*cols.length)],
-    vx: (Math.random()-0.5)*5, vy: Math.random()*4+0.5,
-    rot: Math.random()*Math.PI*2, dr: (Math.random()-0.5)*0.2,
-    alpha: 1, shape: Math.random()>0.5?'rect':'circle'
-  }));
-  const t0 = Date.now();
-  (function frame() {
-    const elapsed = Date.now()-t0;
-    ctx.clearRect(0,0,c.width,c.height);
-    let any = false;
-    pieces.forEach(p => {
-      p.x+=p.vx; p.y+=p.vy; p.vy+=0.07; p.rot+=p.dr;
-      if(elapsed>1800) p.alpha-=0.015;
-      if(p.alpha>0 && p.y<c.height+20){
-        any=true;
-        ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot);
-        ctx.globalAlpha=Math.max(0,p.alpha); ctx.fillStyle=p.color;
-        if(p.shape==='circle'){ctx.beginPath();ctx.arc(0,0,p.w/2,0,Math.PI*2);ctx.fill();}
-        else{ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);}
-        ctx.restore();
-      }
-    });
-    if(any) requestAnimationFrame(frame);
-    else c.style.display='none';
-  })();
-}
 </script>
 </body>
 </html>
